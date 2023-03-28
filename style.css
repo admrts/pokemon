@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #ff9966; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff5e62,
+    #ff9966
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff5e62,
+    #ff9966
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 6px rgba(0, 0, 0, 1);
+}
+
+.search {
+  background-color: transparent;
+  width: 10px;
+  border-radius: 10px;
+  height: 35px;
+  transition: all 0.3s ease;
+}
+.searchBar {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.searchInput {
+  border: transparent;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.searchBtn {
+  background-color: #264653;
+  border: transparent;
+  outline: none;
+  color: #fff;
+  font-size: 1.8rem;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.search.active {
+  width: 250px;
+  transition: all 0.3s ease;
+}
+.search.active .searchBar {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.search.active .searchInput {
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  transition: all 0.3s ease;
+  outline: none;
+  padding-left: 10px;
+}
+.search.active .searchBtn {
+  background-color: #fff;
+  right: 0;
+  color: red;
+  transition: all 0.3s ease;
+}
+
+.poke-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 85%;
+}
+
+.pokemon {
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px gray;
+  border-radius: 20px;
+  color: #fefefe;
+  transition: transform 0.3s ease;
+}
+.pokemon:hover {
+  border: black;
+  box-shadow: 0 0 10px black;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+.image-container {
+  box-shadow: 0 0 10px black;
+  border-radius: 25% 50% 25% 50%;
+  padding: 10px;
+}
+.poke-id {
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.poke-name {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin: 5px 0;
+}
+.poke-exp {
+  margin-right: 5px;
+}
+.poke-type {
+  margin-top: 10px;
+  letter-spacing: 3px;
+}
+.image-container img {
+  width: 180px;
+}
+
+.poke-info {
+  margin-top: 20px;
+}
